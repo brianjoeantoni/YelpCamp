@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YelpCamp - Leave a review!</title>
+    <link rel="stylesheet" href="campground.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="container">
+      <nav>
+        <div class="bar-left">
+          <img class="logo" src="Assets/Logo.svg" alt="" />
+          <a href="index.html">
+            <p>Home</p>
+          </a>
+        </div>
+        <div class="hamburger-container">
+          <label class="hamburger-menu">
+            <input type="checkbox" />
+          </label>
+          <div class="bar-right side-bar">
+            <ul>
+              <li><p>John Doe</p></li>
+              <li>
+                <button
+                  onclick="window.location.href='signInPage.html'"
+                  class="button-logout side-bar-display-none"
+                >
+                  Logout
+                </button>
+              </li>
+              <li
+                onclick="window.location.href='signInPage.html'"
+                class="side-bar-display"
+              >
+                Logout
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container center">
+      <h2>Add New Comment</h2>
+      <p>Description</p>
+      <form action="" method="post">
+        <textarea
+          placeholder="Drop a comment here!"
+          cols="5"
+          rows="10"
+        ></textarea>
+      </form>
+      <a href="campgroundLI.html"><button onclick="alert('Comment Added!')" class="button-default wide">Post Comment</button></a>
+    </main>
+
+    <footer>
+      <img src="Assets/Logo.svg" alt="" />
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

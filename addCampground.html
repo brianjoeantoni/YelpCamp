@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YelpCamp - Add your own campground!</title>
+    <link rel="stylesheet" href="campground.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="container">
+      <nav>
+        <div class="bar-left">
+          <img class="logo" src="Assets/Logo.svg" alt="" />
+          <a href="index.html">
+            <p>Home</p>
+          </a>
+        </div>
+        <div class="hamburger-container">
+          <label class="hamburger-menu">
+            <input type="checkbox" />
+          </label>
+          <div class="bar-right side-bar">
+            <ul>
+              <li><p>John Doe</p></li>
+              <li>
+                <button
+                  onclick="window.location.href='signInPage.html'"
+                  class="button-logout side-bar-display-none"
+                >
+                  Logout
+                </button>
+              </li>
+              <li
+                onclick="window.location.href='signInPage.html'"
+                class="side-bar-display"
+              >
+                Logout
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container center">
+      <h2>Add New Campground</h2>
+      <p>Campground Name</p>
+      <input type="text" placeholder="Insert campground's name " />
+      <p>Price</p>
+      <input type="number" placeholder="$" />
+      <p>Image</p>
+      <input type="text" placeholder="Insert image link" />
+      <p>Description</p>
+      <form action="" method="post">
+        <textarea
+          placeholder="Insert description"
+          cols="5"
+          rows="10"
+        ></textarea>
+      </form>
+      <a onclick="alert('Campground added successfully!'), window.location.href='searchPageLI.html'" href="#"
+        ><button class="button-default wide">Add Campground</button></a
+      >
+    </main>
+
+    <footer>
+      <img src="Assets/Logo.svg" alt="" />
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

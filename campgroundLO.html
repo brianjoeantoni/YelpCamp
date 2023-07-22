@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YelpCamp - Campgrounds</title>
+    <link rel="stylesheet" href="campground.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="container">
+      <nav>
+        <div class="bar-left">
+          <img class="logo" src="Assets/Logo.svg" alt="" />
+          <a href="index.html">
+            <p>Home</p>
+          </a>
+        </div>
+        <div class="hamburger-container">
+          <label class="hamburger-menu">
+            <input type="checkbox" />
+          </label>
+          <div class="bar-right side-bar">
+            <ul>
+              <li>
+                <a href="signInPage.html"><p>Login</p></a>
+              </li>
+              <li>
+                <button
+                  onclick="window.location.href='signUpPage.html'"
+                  class="button-login side-bar-display-none"
+                >
+                  Create an Account
+                </button>
+              </li>
+              <li
+                onclick="window.location.href='signUpPage.html'"
+                class="side-bar-display"
+              >
+                Create an Account
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container grid">
+      <div class="campground-map">
+        <img src="Assets/Map.png" alt="" />
+      </div>
+      <div class="campground-details">
+        <img src="Assets/CampImages/Mount Ulap.png" alt="" />
+        <div class="campground-title">
+          <h3>Mount Ulap</h3>
+          <p><span class="bold">$104.99/night</span></p>
+        </div>
+        <p>
+          Mount ulap Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Culpa blanditiis itaque quae ad quos a est et laborum placeat
+          repudiandae.
+        </p>
+        <br />
+        <p><span class="italic">Submitted by Andrew Mike</span></p>
+      </div>
+      <div class="campground-comments-container">
+        <div class="campground-comments">
+          <div class="user">
+            <p><span class="bold">Adam Jones</span></p>
+            <p>13h ago</p>
+          </div>
+          <p>
+            Honestly one of the best experiences ever, took us a while to figure
+            out how to get there but it was amazing!
+          </p>
+          <hr />
+        </div>
+        <div class="campground-comments">
+          <div class="user">
+            <p><span class="bold">Isaac Dylan</span></p>
+            <p>1 day ago</p>
+          </div>
+          <p>
+            Traveling changes you as a person, you gain more perspective, this
+            is the perfect spot to do that.
+          </p>
+          <hr />
+        </div>
+        <div class="campground-comments">
+          <div class="user">
+            <p><span class="bold">Hudson Luca</span></p>
+            <p>3 days ago</p>
+          </div>
+          <p>
+            Definitely recommend going there, not too far and not a lot of
+            people to ruin the experience.
+          </p>
+          <hr />
+        </div>
+        <div class="button-container">
+          <a
+            onclick="alert('You must be signed in to do that!')"
+            href="signInPage.html"
+            ><button class="button-default"><p>Leave A Review</p></button>
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <img src="Assets/Logo.svg" alt="" />
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

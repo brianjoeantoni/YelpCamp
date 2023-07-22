@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YelpCamp - SignUp</title>
+    <link rel="stylesheet" href="signPage.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="two-box">
+      <main class="left-page">
+        <header>
+          <img src="Assets/Logo.svg" alt="" />
+          <p onclick="window.location.href='searchPageLO.html'">Back to campgrounds</p>
+        </header>
+        <div class="container column">
+          <h2>Start exploring camps from all around the world.</h2>
+          <p>Username</p>
+          <input type="text" placeholder="johndoe_01" />
+          <p>Password</p>
+          <input type="password" placeholder="Enter Your Password" />
+          <button onclick="alert('Account created successfully!'),window.location.href='signInPage.html'" class="button-login">Create an Account</button>
+          <p>
+            Already a user?
+            <a href="signInPage.html"><span class="link">Sign in</span></a>
+          </p>
+        </div>
+      </main>
+      <div class="right-page">
+        <div class="container">
+          <h3>
+            "YelpCamp has honestly saved me hours of research time, and the
+            camps here are definitely well picked and added."
+          </h3>
+          <div class="testimony">
+            <img src="Assets/UserTestimonial.svg" alt="" />
+            <div class="testimony-details">
+              <p class="testimony-user">May Andrews</p>
+              <p class="testimony-user-details">Professional Hiker</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

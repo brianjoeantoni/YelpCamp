@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YelpCamp - Search for your favorite campgrounds!</title>
+    <link rel="stylesheet" href="searchPage.css" />
+  </head>
+  <body>
+    <header class="container">
+      <nav>
+        <div class="bar-left">
+          <img class="logo" src="Assets/Logo.svg" alt="" />
+          <a href="index.html">
+            <p>Home</p>
+          </a>
+        </div>
+        <div class="hamburger-container">
+          <label class="hamburger-menu">
+            <input type="checkbox" />
+          </label>
+          <div class="bar-right side-bar">
+            <ul>
+              <li><p>John Doe</p></li>
+              <li>
+                <button
+                  onclick="window.location.href='signInPage.html'"
+                  class="button-logout side-bar-display-none"
+                >
+                  Logout
+                </button>
+              </li>
+              <li
+                onclick="window.location.href='signInPage.html'"
+                class="side-bar-display"
+              >
+                Logout
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container welcome">
+      <h2>Welcome to YelpCamp!</h2>
+      <p>
+        View our hand-picked campgrounds from all over <br />
+        the world, or add your own.
+      </p>
+      <img class="search-icon" src="Assets/SearchIcon.png" alt="" />
+      <div class="search-bar">
+        <input
+          class="input-search"
+          type="text"
+          placeholder="Search for camps"
+        />
+        <button
+          onclick="alert('Feature not implemented yet!')"
+          class="button-default"
+        >
+          Search
+        </button>
+      </div>
+      <a href="addCampground.html">
+        <p><span class="underline">Or add your own campground</span></p>
+      </a>
+    </div>
+
+    <main class="container grid">
+      <div class="box">
+        <img src="Assets/CampImages/Buloy Springs.jpg" alt="" />
+        <div class="box-content">
+          <h3>Buloy Springs</h3>
+          <p>
+            This is one of the best beach camping sites, beautiful and pristine.
+          </p>
+        </div>
+        <div class="box-button">
+          <button onclick="window.location.href='campgroundLI.html'">
+            View Campground
+          </button>
+        </div>
+      </div>
+      <div class="box">
+        <img src="Assets/CampImages/Calagus Islands.jpg" alt="" />
+        <div class="box-content">
+          <h3>Calaguas Islands</h3>
+          <p>
+            A paradise of islands that can rival the white sand beauty of
+            Boracay.
+          </p>
+        </div>
+        <div class="box-button">
+          <button onclick="window.location.href='campgroundLI.html'">
+            View Campground
+          </button>
+        </div>
+      </div>
+      <div class="box">
+        <img src="Assets/CampImages/Latik Riverside.jpg" alt="" />
+        <div class="box-content">
+          <h3>Latik Riverside</h3>
+          <p>
+            Philippines is one of the most dazzling countries in all of Asia.
+          </p>
+        </div>
+        <div class="box-button">
+          <button onclick="window.location.href='campgroundLI.html'">
+            View Campground
+          </button>
+        </div>
+      </div>
+      <div class="box">
+        <img src="Assets/CampImages/Mount Ulap.png" alt="" />
+        <div class="box-content">
+          <h3>Mount Ulap</h3>
+          <p>One of the most famous hikes in Benguet is Mt Ulap in Itogon.</p>
+        </div>
+        <div class="box-button">
+          <button onclick="window.location.href='campgroundLI.html'">
+            View Campground
+          </button>
+        </div>
+      </div>
+      <div class="box">
+        <img src="Assets/CampImages/Onay Beach.jpg" alt="" />
+        <div class="box-content">
+          <h3>Onay Beach</h3>
+          <p>
+            This is one of the best beach camping sites, beautiful and pristine.
+          </p>
+        </div>
+        <div class="box-button">
+          <button onclick="window.location.href='campgroundLI.html'">
+            View Campground
+          </button>
+        </div>
+      </div>
+      <div class="box">
+        <div class="box-content">
+          <div class="img-container">
+            <img src="Assets/CampImages/Seven Sisters Waterfall.jpg" alt="" />
+          </div>
+
+          <h3>Seven Sisters Waterfall</h3>
+          <p>
+            The Seven Sisters is the 39th tallest waterfall located in Norway.
+          </p>
+        </div>
+        <div class="box-button">
+          <button onclick="window.location.href='campgroundLI.html'">
+            View Campground
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <img src="Assets/Logo.svg" alt="" />
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  list-style-type: none;
+  font-family: system-ui;
+  border: none;
+  text-decoration: none;
+}
+h2 {
+  font-size: 2.5rem;
+  margin: 0.5rem 0;
+}
+h3 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+p {
+  color: rgb(106, 106, 106);
+  margin: 0.5rem 0;
+}
+.icon {
+  height: 1rem;
+  width: 1rem;
+}
+.two-box {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-template-areas: "details image";
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left-page {
+  grid-area: details;
+  flex-wrap: wrap;
+  background-color: white;
+}
+.right-page {
+  grid-area: image;
+  background-color: rgb(246, 243, 239);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container {
+  padding: 0 10rem;
+}
+.container h1 {
+  font-size: 3.75rem;
+}
+.container p {
+  font-size: 1.25rem;
+}
+.container ul li {
+  display: flex;
+  margin: 1rem 0;
+  gap: 0.5rem;
+}
+.container ul li:nth-child(3) {
+  margin: 0;
+}
+
+header {
+  padding: 3rem 10rem;
+}
+header p {
+  display: flex;
+  align-items: center;
+}
+header p::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f060";
+  display: inline-block;
+  margin-top: 3px;
+  margin-right: 0.5rem;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+.button-default {
+  color: rgb(246, 243, 239);
+  background-color: black;
+  padding: rem 2rem;
+  margin: 1.5rem 0;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  border: 1px solid rgb(246, 243, 239);
+}
+.button-default:hover {
+  color: black;
+  background-color: rgb(246, 243, 239);
+  border: 1px solid black;
+  transition: 0.2s;
+}
+.partnership {
+  display: block;
+}
+
+/*input*/
+.container.column {
+  display: flex;
+  flex-direction: column;
+}
+input {
+  padding: 1rem 1rem;
+  display: block;
+  color: rgb(246, 243, 239);
+  background-color: rgb(245, 245, 245);
+}
+.button-login {
+  color: white;
+  padding: 1rem 1rem;
+  margin-top: 2rem;
+  background-color: black;
+  font-weight: bold;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.button-login:hover {
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  transition: 0.2s;
+}
+span.link {
+  color: rgb(34, 170, 243);
+  text-decoration: underline;
+}
+/*testimony*/
+.testimony {
+  display: flex;
+  gap: 0.5rem;
+}
+.testimony p {
+  margin: 0;
+  font-size: 1rem;
+}
+.testimony-user {
+  color: black;
+  font-weight: bold;
+}
+.testimony details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+/*start media query*/
+@media (max-width: 1080px) {
+  header,
+  .container {
+    padding: 2rem 3.5rem;
+  }
+  .padding-bottom,
+  .padding-top {
+    padding-bottom: 2rem;
+  }
+  .two-box {
+    display: flex;
+    flex-direction: column;
+  }
+  p {
+    margin: 1rem 0;
+  }
+
+}
+@media (max-width: 550px) {
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+}
